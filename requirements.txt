@@ -1,0 +1,9 @@
+accelerate>=0.16.0
+diffusers
+huggingface_hub
+pandas
+torchvision
+transformers>=4.25.1
+ftfy
+tensorboard
+Jinja2
