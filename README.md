@@ -22,7 +22,7 @@ limitations under the License.
 
 # Introduction
 This is the official code for "PromptGuard : Soft Prompt-Guided Unsafe Content Moderation for Text-to-Image Models"
-We have released our pretrained model on [Hugging Face](https://huggingface.co/). Please check out how to use it for inference
+We have released our pretrained model on [Hugging Face](https://huggingface.co/Prompt-Guard/PromptGuard_weights). Please check out how to use it for inference.
 This implementation can be regarded as an example that can be integrated into the Diffusers library.
 
 # Training Dataset
@@ -66,6 +66,8 @@ prompt_with_system = origin_prompt + " " + token1 + " " + token2 + ...
 image = pipe(prompt).images[0]
 image.save("example.png")
 ```
+
+To get a better balance between unsafe content moderation and benign content preservation, we recommend you to load Sexual, Political and Disturbing these three safe embeddings.
 
 # Acknowledgement
 
