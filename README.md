@@ -20,7 +20,7 @@ limitations under the License.
     <br>
 <p> -->
 
-# Introduction
+# 📚 Introduction
 This is the official code for paper "[PromptGuard : Soft Prompt-Guided Unsafe Content Moderation for Text-to-Image Models](https://arxiv.org/abs/2501.03544)".
 
 You could check our [Project Website](https://prompt-guard.github.io/) for more information.
@@ -29,23 +29,23 @@ We have released our pretrained model on [Hugging Face](https://huggingface.co/P
 
 This implementation can be regarded as an example that can be integrated into the Diffusers library.
 
-# Training Dataset
+# 📦 Training Dataset
 You could download our training dataset from [this link](https://drive.google.com/file/d/1czQL3-H-Z83XAZuTmJdgTIX2altah6A6/view?usp=sharing). The training dataset is **not permitted for any commercial use**.
 
-# Environments and Installation
+# 🔧 Environments and Installation
 ```bash
 conda create -n promptguard python=3.9
 conda activate promptguard
 pip install -r requirements.txt
 ```
 
-# Individual Safety Embedding Training
+# 🔧 Individual Safety Embedding Training
 ```bash
 bash training.sh
 ```
 You could modify the parameters in training.sh file. Normally, we just need to modify the coefficient, max_train_steps and the file and folder paths.
 
-# Inference
+# 🔧 Inference
 ```python
 from diffusers import StableDiffusionPipeline
 import torch
@@ -73,7 +73,21 @@ image.save("example.png")
 
 To get a better balance between unsafe content moderation and benign content preservation, we recommend you to load Sexual, Political and Disturbing these three safe embeddings.
 
-# Acknowledgement
+# 📄 Citation
+If you find our paper/code/dataset helpful, please kindly consider citing this work with the following reference:
+```
+@misc{yuan2025promptguard,
+  title={PromptGuard: Soft Prompt-Guided Unsafe Content Moderation for Text-to-Image Models}, 
+  author={Lingzhi Yuan and Xinfeng Li and Chejian Xu and Guanhong Tao and Xiaojun Jia and Yihao Huang and Wei Dong and Yang Liu and Bo Li},
+  year={2025},
+  eprint={2501.03544},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2501.03544}, 
+}
+```
+
+# ✨ Acknowledgement
 
 This work is based on the amazing research works and open-source projects, thanks a lot to all the authors for sharing!
 
