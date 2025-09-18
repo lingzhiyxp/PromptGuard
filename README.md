@@ -22,8 +22,11 @@ limitations under the License.
 
 # Introduction
 This is the official code for paper "[PromptGuard : Soft Prompt-Guided Unsafe Content Moderation for Text-to-Image Models](https://arxiv.org/abs/2501.03544)".
+
 You could check our [Project Website](https://prompt-guard.github.io/) for more information.
+
 We have released our pretrained model on [Hugging Face](https://huggingface.co/Prompt-Guard/PromptGuard_weights). Please check out how to use it for inference.
+
 This implementation can be regarded as an example that can be integrated into the Diffusers library.
 
 # Training Dataset
